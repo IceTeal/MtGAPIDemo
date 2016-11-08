@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
                 JSONObject firstCard = cards.getJSONObject(0);
                 JSONArray editions = firstCard.getJSONArray("editions");
-                JSONObject recentEdition = editions.getJSONObject(editions.length() - 1);
+                JSONObject recentEdition = editions.getJSONObject(0);
 
                 String imageURL = recentEdition.getString("image_url");
 
